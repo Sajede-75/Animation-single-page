@@ -31,13 +31,14 @@ body {
   font-family: Segoe UI , -apple-system, BlinkMacSystemFont,  'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  direction: rtl;
+  direction: ltr;
   background: var(--primary-1);
 }
 
 :root{
   --primary-1: #FEEDBC;
   --primary-2:  #F9B800;
+  --primary-3:  #262626;
   
   --color-1: #262626;
   --color-2: #000;
@@ -66,11 +67,8 @@ body {
 
 }
 .basePage{
-   
     display: flex;
     flex-direction: column;
     position: relative;
-    width: calc(100vw - 20rem);
-    height:calc(100vh - 5rem);
-    padding: 5rem 10rem 0;
+    width: 100vw;
 }

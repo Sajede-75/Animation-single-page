@@ -9,8 +9,16 @@ const StyleForm = styled.form`
     grid-gap: 1rem;
     background: var(--bg-color-1);
     padding: 1rem;
-    border-radius: 8px;
     margin-left: 6rem;
+    border-radius: 8px;
+    width: calc(50% - 2rem);
+    .form-text{
+        grid-column: span 2;
+        display: flex;
+        text-align: start;
+        font-size: var(--font-size-3);
+        font-weight: var(--font-weight-3);
+    }
     .sendButton{
         grid-column: span 2;
         color: var(--color-4);
@@ -27,6 +35,15 @@ const StyleForm = styled.form`
         color: var(--primary-2);
         background: var(--bg-color-1);
     }
+`
+
+const StyleSuccess= styled.div`
+    display: flex;
+    text-align: center;
+    position: relative;
+    font-size: var(--font-size-1);
+    font-weight: var(--font-weight-1);
+    color: var(--color-2);
 `
 
 const form = [
@@ -77,6 +94,7 @@ export const UserFromData=()=>{
     const userForm =()=>{
         return(
             <StyleForm onSubmit={PostData}>
+                <div  className="form-text">Please fill out your information</div>
                 { 
                     form.map((value , index)=>{
                         return <TextInputWTitle key={index} keys={index}  error='' name={value.name} title={value.label} type={value.type} inputmode={value.mode} value={userdata[value.value]} onchange={inputchange} required={false}/>
@@ -88,9 +106,9 @@ export const UserFromData=()=>{
     }
     const UserWelCome=()=>{
         return(
-            <div>
-                welcome
-            </div>
+            <StyleSuccess>
+                Thank you. Your Data Saved.
+            </StyleSuccess>
         )
     }
     if(sending){

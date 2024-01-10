@@ -16,7 +16,6 @@ const StyleGril = styled.div`
         to { 
             width: 120px;
         }
-       
     }
     @keyframes scaleAni {
         0%  { 
@@ -28,7 +27,6 @@ const StyleGril = styled.div`
         100% { 
             transform:scale(1) 
         }
-       
     }
     @keyframes morehieght {
         0% {
@@ -95,14 +93,7 @@ const StyleGril = styled.div`
         100% {
             transform: rotate(0deg) ;
         }
-    }
-
-    /* @keyframes shake {
-        3%, 12%, 21%, 30%, 39%, 48%, 57%, 65%, 74%, 83%, 92% { transform: translateX(1px) translateY(10px) }
-        6%, 15%, 24%, 33%, 42%, 51%, 60%, 68%, 77%, 86%, 95% { transform: translateX(0px) translateY(0)}
-        9%, 18%, 27%, 36%, 45%, 54%, 63%, 71%, 80%, 89%, 98% { transform: translateX(-1px) translateY(10px) }
-    } */
-  
+    }  
     .scaleless{
         animation: scaleless 2s var(--liner) infinite ;
         animation-delay: 5ms;
@@ -147,8 +138,6 @@ const StyleGril = styled.div`
         transform-origin: initial;
         transform-box: content-box;
     }
-
-
 `
 
 

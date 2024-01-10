@@ -30,8 +30,10 @@ const StyleForm = styled.form`
         width:100% ;
         font-size: var(--font-size-3);
         font-weight: var(--font-weight-3);
+        border: var(--border-1);
+
     }
-    :hover{
+    .sendButton:hover{
         color: var(--primary-2);
         background: var(--bg-color-1);
     }
@@ -41,9 +43,20 @@ const StyleSuccess= styled.div`
     display: flex;
     text-align: center;
     position: relative;
-    font-size: var(--font-size-1);
+    font-size: var(--font-size-5);
     font-weight: var(--font-weight-1);
     color: var(--color-2);
+    animation: showup 2s infinite;
+    -webkit-animation-fill-mode: backwards;
+    animation-fill-mode: forwards;
+
+    
+    @keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:0;}
+}
 `
 
 const form = [
@@ -54,21 +67,21 @@ const form = [
 ]
 
 export const UserFromData=()=>{
-    const [userdata , setUserData]= useState([])
+    const [userdata , setUserData]= useState({})
     const [sending , setSending]= useState(false)
     const PostData= (e) => {
         e.preventDefault()
         console.log(JSON.stringify(userdata))
-        // fetch('https://jsonplaceholder.typicode.com/users', {
-        //     method: 'POST',
-        //     body: JSON.stringify(userdata),
-        //     headers: {
-        //       'Accept': 'application/json'
-        //     },
-        // })
-        // .then((response) => { response.json() })
-        // .then((json) => console.log(json))
-        // .then( setSending(true))
+        fetch('https://jsonplaceholder.typicode.com/users', {
+            method: 'POST',
+            body: JSON.stringify(userdata),
+            headers: {
+              'Accept': 'application/json'
+            },
+        })
+        .then((response) => { response.json() })
+        .then((json) => console.log(json))
+        .then( setSending(true))
     }
 
     const inputchange=(e)=>{
@@ -93,7 +106,7 @@ export const UserFromData=()=>{
     }
     const userForm =()=>{
         return(
-            <StyleForm onSubmit={PostData}>
+            <StyleForm onSubmit={PostData} autocomplete="off">
                 <div  className="form-text">Please fill out your information</div>
                 { 
                     form.map((value , index)=>{

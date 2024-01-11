@@ -11,7 +11,7 @@ const StyleForm = styled.form`
     padding: 1rem;
     margin-left: 6rem;
     border-radius: 8px;
-    width: calc(50% - 2rem);
+    width: calc(40% - 2rem);
     .form-text{
         grid-column: span 2;
         display: flex;
@@ -36,6 +36,11 @@ const StyleForm = styled.form`
     .sendButton:hover{
         color: var(--primary-2);
         background: var(--bg-color-1);
+    }
+    @media screen and (max-width:850px){
+        width: 100%;
+        margin-left: 0;
+        padding: 0;
     }
 `
 

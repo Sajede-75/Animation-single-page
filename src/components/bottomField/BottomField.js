@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import Girl2 from "../../assets/Girl2"
-import { UserFromData } from "../topField/UserFormData"
+import { UserFromData } from "./UserFormData"
 
 const Style = styled.div`
     position: relative;
@@ -9,7 +9,7 @@ const Style = styled.div`
     justify-content: space-between;
     align-items: center;
     width: calc(100% - 20rem);
-    height: 60rem;
+    height: 50rem;
     padding: 0 10rem ;    
     background: var(--primary-2);
     .top-empty{
@@ -25,6 +25,19 @@ const Style = styled.div`
         position: absolute;
         inset: 0;
         z-index: 2;
+    }
+    @media screen and (max-width:850px){
+        padding: 0 1rem;
+        margin-top: 0;
+        width: calc(100% - 2rem);
+        height: 100%;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        height: max-content;
+        .bottom-empty , .top-empty{
+            border-top-width: 10rem;
+            border-bottom-width: 10rem;
+        }
     }
 `
 

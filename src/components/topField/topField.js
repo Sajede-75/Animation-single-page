@@ -11,7 +11,6 @@ const Style = styled.div`
     width: calc(100% - 20rem);
     margin-top: 4.25rem;
     padding: 0 10rem;
-    /* height: 25rem; */
     @media screen and (max-width:850px){
         padding: 0 1rem;
         margin-top: 0;

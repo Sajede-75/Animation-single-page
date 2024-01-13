@@ -6,6 +6,7 @@ const StyleSearch = styled.div`
     margin: 3.75rem auto 0;
     width: calc(100% - 20rem);
     height: 4rem;
+
     @media screen and (max-width: 850px){
         margin: 3.75rem 1rem;
         width: calc(100% - 2rem);

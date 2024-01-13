@@ -10,6 +10,172 @@ const StyleGril = styled.div`
         height: 100%;
         position: relative;
     }
+
+    .rotate{
+        animation: rotate 2s var(--liner) infinite ;
+        -webkit-animation: rotate 2s var(--liner) infinite ;
+        -moz-animation: rotate 2s var(--liner) infinite ;
+        -o-animation: rotate 2s var(--liner) infinite ;
+        -ms-transition: rotate 2s var(--liner) infinite ;
+    }
+    @keyframes rotate {
+        0% { transform: rotate(5deg) }
+        50% { transform: rotate(0deg) }
+        100% { transform: rotate(5deg) }
+    }
+    @-webkit-keyframes rotate {
+        0% { transform: rotate(5deg) }
+        50% { transform: rotate(0deg) }
+        100% { transform: rotate(5deg) }
+    }
+    @-ms-keyframes rotate {
+        0% { transform: rotate(5deg) }
+        50% { transform: rotate(0deg) }
+        100% { transform: rotate(5deg) }
+    }
+    @-o-keyframes rotate {
+        0% { transform: rotate(5deg) }
+        50% { transform: rotate(0deg) }
+        100% { transform: rotate(5deg) }
+    }
+    @-moz-keyframes rotate {
+        0% { transform: rotate(5deg) }
+        50% { transform: rotate(0deg) }
+        100% { transform: rotate(5deg) }
+    }
+
+    .flower{
+        animation: flower 2s ease infinite ;
+        -webkit-animation:  flower 2s ease infinite ;
+        -moz-animation: flower 2s ease infinite ;
+        -o-animation:   flower 2s ease infinite ;
+        -ms-transition: flower 2s ease infinite ;
+    }
+    @keyframes flower {
+        0% { transform: rotate(0deg) }
+        50% { transform: rotate(20deg) }
+        100% { transform: rotate(0deg) }
+    }
+    @-webkit-keyframes flower {
+        0% { transform: rotate(0deg) }
+        50% { transform: rotate(20deg) }
+        100% { transform: rotate(0deg) }
+    }
+    @-ms-keyframes flower {
+        0% { transform: rotate(0deg) }
+        50% { transform: rotate(20deg) }
+        100% { transform: rotate(0deg) }
+    }
+    @-o-keyframes flower {
+        0% { transform: rotate(0deg) }
+        50% { transform: rotate(20deg) }
+        100% { transform: rotate(0deg) }
+    }
+    @-moz-keyframes flower {
+        0% { transform: rotate(0deg) }
+        50% { transform: rotate(20deg) }
+        100% { transform: rotate(0deg) }
+    }
+
+    .scaleS{
+        animation: scaleS 2s var(--liner) infinite ;
+        -webkit-animation: scaleS 2s var(--liner) infinite ;
+        -moz-animation: scaleS 2s var(--liner) infinite ;
+        -o-animation: scaleS 2s var(--liner) infinite ;
+        -ms-transition: scaleS 2s var(--liner) infinite ;
+    }
+    @keyframes scaleS {
+        0% { transform:scale(1.2) }
+        50% { transform:scale(1) }
+        100% { transform:scale(1.2) }
+    }
+    @-webkit-keyframes scaleS {
+        0% { transform:scale(1.2) }
+        50% { transform:scale(1) }
+        100% { transform:scale(1.2) }
+    }
+    @-ms-keyframes scaleS {
+        0% { transform:scale(1.2) }
+        50% { transform:scale(1) }
+        100% { transform:scale(1.2) }
+    }
+    @-o-keyframes scaleS {
+        0% { transform:scale(1.2) }
+        50% { transform:scale(1) }
+        100% { transform:scale(1.2) }
+    }
+    @-moz-keyframes scaleS {
+        0% { transform:scale(1.2) }
+        50% { transform:scale(1) }
+        100% { transform:scale(1.2) }
+    }
+
+    .moreWidth{
+        animation: moreWidth 2s var(--liner) infinite ;
+        -webkit-animation: moreWidth 2s var(--liner) infinite ;
+        -moz-animation: moreWidth 2s var(--liner) infinite ;
+        -o-animation: moreWidth 2s var(--liner) infinite ;
+        -ms-transition: moreWidth 2s var(--liner) infinite ; 
+    }
+    @keyframes moreWidth  {
+        0% { transform: scaleX(1.05)}
+        50% { transform: scaleX(1) }
+        100% { transform: scaleX(1.05)}
+    }
+    @-webkit-keyframes moreWidth  {
+        0% { transform: scaleX(1.05)}
+        50% { transform: scaleX(1) }
+        100% { transform: scaleX(1.05)}
+    }
+    @-ms-keyframes moreWidth  {
+        0% { transform: scaleX(1.05)}
+        50% { transform: scaleX(1) }
+        100% { transform: scaleX(1.05)}
+    }
+    @-o-keyframes moreWidth  {
+        0% { transform: scaleX(1.05)}
+        50% { transform: scaleX(1) }
+        100% { transform: scaleX(1.05)}
+    }
+    @-moz-keyframes moreWidth  {
+        0% { transform: scaleX(1.05)}
+        50% { transform: scaleX(1) }
+        100% { transform: scaleX(1.05)}
+    }
+
+    .moreHeight{
+        animation: bounceH 2s var(--liner) infinite ;
+        -webkit-animation: bounceH 2s var(--liner) infinite ;
+        -moz-animation: bounceH 2s var(--liner) infinite ;
+        -o-animation: bounceH 2s var(--liner) infinite ;
+        -ms-transition: bounceH 2s var(--liner) infinite ;
+    }
+    @keyframes bounceH {
+        0% { transform: scaleY(0.9)  }
+        50% { transform: scaleY(1) }
+        100% { transform: scaleY(0.9) }
+    }
+    @-webkit-keyframes bounceH {
+        0% { transform: scaleY(0.9)  }
+        50% { transform: scaleY(1) }
+        100% { transform: scaleY(0.9) }
+    }
+    @-ms-keyframes bounceH {
+        0% { transform: scaleY(0.9)  }
+        50% { transform: scaleY(1) }
+        100% { transform: scaleY(0.9) }
+    }
+    @-o-keyframes bounceH {
+        0% { transform: scaleY(0.9)  }
+        50% { transform: scaleY(1) }
+        100% { transform: scaleY(0.9) }
+    }
+    @-moz-keyframes bounceH {
+        0% { transform: scaleY(0.9)  }
+        50% { transform: scaleY(1) }
+        100% { transform: scaleY(0.9) }
+    }
+
     @media screen and (max-width:850px){
         width: 100%;
         margin-top: 0;

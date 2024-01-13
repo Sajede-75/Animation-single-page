@@ -38,9 +38,9 @@ const StyleForm = styled.form`
         background: var(--bg-color-1);
     }
     @media screen and (max-width:850px){
-        width: 100%;
+        width: calc(100% - 2rem);
         margin-left: 0;
-        padding: 0;
+        grid-template-columns: 1fr    
     }
 `
 
@@ -111,7 +111,7 @@ export const UserFromData=()=>{
     }
     const userForm =()=>{
         return(
-            <StyleForm onSubmit={PostData} autocomplete="off">
+            <StyleForm onSubmit={PostData} autoComplete="off">
                 <div  className="form-text">Please fill out your information</div>
                 { 
                     form.map((value , index)=>{

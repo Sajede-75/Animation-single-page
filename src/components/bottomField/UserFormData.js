@@ -23,7 +23,6 @@ const StyleForm = styled.form`
         grid-column: span 2;
         color: var(--color-4);
         border-radius: 4px;
-        border: none;
         cursor: pointer;
         background: var(--primary-2);
         padding: 1rem;
@@ -31,37 +30,34 @@ const StyleForm = styled.form`
         font-size: var(--font-size-3);
         font-weight: var(--font-weight-3);
         border: var(--border-1);
-
     }
     .sendButton:hover{
         color: var(--primary-2);
         background: var(--bg-color-1);
     }
-    @media screen and (max-width:850px){
+    @media screen and (max-width: 850px){
         width: calc(100% - 2rem);
         margin-left: 0;
-        grid-template-columns: 1fr    
+        display: flex;
+        flex-direction: column;
     }
 `
 
-const StyleSuccess= styled.div`
+const StyleSuccess= styled.h1`
     display: flex;
     text-align: center;
     position: relative;
-    font-size: var(--font-size-5);
     font-weight: var(--font-weight-1);
     color: var(--color-2);
-    animation: showup 2s infinite;
+    animation: showup 3s infinite linear;
     -webkit-animation-fill-mode: backwards;
     animation-fill-mode: forwards;
-
-    
     @keyframes showup {
-    0% {opacity:0;}
-    20% {opacity:1;}
-    80% {opacity:1;}
-    100% {opacity:0;}
-}
+        0% {opacity:0;}
+        20% {opacity:1;}
+        80% {opacity:1;}
+        100% {opacity:0;}
+    }
 `
 
 const form = [
@@ -74,7 +70,8 @@ const form = [
 export const UserFromData=()=>{
     const [userdata , setUserData]= useState({})
     const [sending , setSending]= useState(false)
-    const PostData= (e) => {
+    const postData = (e) => {
+        console.log(JSON.stringify('userdata'))
         e.preventDefault()
         console.log(JSON.stringify(userdata))
         fetch('https://jsonplaceholder.typicode.com/users', {
@@ -111,7 +108,7 @@ export const UserFromData=()=>{
     }
     const userForm =()=>{
         return(
-            <StyleForm onSubmit={PostData} autoComplete="off">
+            <StyleForm onSubmit={postData} >
                 <div  className="form-text">Please fill out your information</div>
                 { 
                     form.map((value , index)=>{
@@ -125,7 +122,7 @@ export const UserFromData=()=>{
     const UserWelCome=()=>{
         return(
             <StyleSuccess>
-                Thank you. Your Data Saved.
+                Thank you. Your Data Saved &#58;&#41;
             </StyleSuccess>
         )
     }

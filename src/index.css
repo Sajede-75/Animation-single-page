@@ -98,7 +98,7 @@ body {
 .animation{
   position: relative;
   transform-origin: initial;
-  transform-box: content-box;
+  transform-box:fill-box;
 }
 .scaleB{
   animation: scaleB 2s var(--liner) infinite ;

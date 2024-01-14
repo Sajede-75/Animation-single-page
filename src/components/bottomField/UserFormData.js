@@ -30,6 +30,7 @@ const StyleForm = styled.form`
         font-size: var(--font-size-3);
         font-weight: var(--font-weight-3);
         border: var(--border-1);
+        cursor: pointer;
     }
     .sendButton:hover{
         color: var(--primary-2);

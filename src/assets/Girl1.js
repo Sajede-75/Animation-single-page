@@ -10,7 +10,6 @@ const StyleGril = styled.div`
         height: 100%;
         position: relative;
     }
-
     .rotate{
         animation: rotate 2s var(--liner) infinite ;
         -webkit-animation: rotate 2s var(--liner) infinite ;

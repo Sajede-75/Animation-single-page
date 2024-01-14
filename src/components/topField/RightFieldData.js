@@ -79,7 +79,7 @@ const Style = styled.div`
             content: '|';
             display: flex;
             width: 11rem ;
-            animation: textAnimation linear 2s infinite;
+            animation: textAnimation linear 2.5s infinite;
             animation-delay: 2s ;
             background-color: var(--primary-1);
             position: absolute;
@@ -148,6 +148,7 @@ const Style = styled.div`
         margin-left: 0;
         width: 100%;
         .dataGrid .dataItem{
+            padding: 11.795px 33.701px 11.795px 16.85px;
             max-width: calc(100% - 1rem);
         }
         .button{

@@ -186,29 +186,29 @@ const StyleGirl2= styled.div`
         -ms-transition: handUp 2s var(--liner) infinite ;
     }
     @keyframes handUp {
-        0% { transform: scaleY(1)  }
-        50% { transform: scaleY(1.2) }
-        100% { transform: scaleY(1) }
+        0% { transform: scaleY(1.2)  }
+        50% { transform: scaleY(1) }
+        100% { transform: scaleY(1.2) }
     }
     @-webkit-keyframes handUp {
-        0% { transform: scaleY(1)  }
-        50% { transform: scaleY(1.2) }
-        100% { transform: scaleY(1) }
+        0% { transform: scaleY(1.2)  }
+        50% { transform: scaleY(1) }
+        100% { transform: scaleY(1.2) }
     }
     @-ms-keyframes handUp {
-        0% { transform: scaleY(1)  }
-        50% { transform: scaleY(1.2) }
-        100% { transform: scaleY(1) }
+        0% { transform: scaleY(1.2)  }
+        50% { transform: scaleY(1) }
+        100% { transform: scaleY(1.2) }
     }
     @-o-keyframes handUp {
-        0% { transform: scaleY(1)  }
-        50% { transform: scaleY(1.2) }
-        100% { transform: scaleY(1) }
+        0% { transform: scaleY(1.2)  }
+        50% { transform: scaleY(1) }
+        100% { transform: scaleY(1.2) }
     }
     @-moz-keyframes handUp {
-        0% { transform: scaleY(1)  }
-        50% { transform: scaleY(1.2) }
-        100% { transform: scaleY(1) }
+        0% { transform: scaleY(1.2)  }
+        50% { transform: scaleY(1) }
+        100% { transform: scaleY(1.2) }
     }
 
     .scaleS{

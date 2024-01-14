@@ -4,8 +4,8 @@ import { UserFromData } from "./UserFormData"
 
 const Style = styled.div`
     position: relative;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(2 , 50%);
     justify-content: space-between;
     align-items: center;
     width: calc(100% - 20rem);
@@ -31,12 +31,15 @@ const Style = styled.div`
         margin-top: 0;
         width: calc(100% - 2rem);
         height: 100%;
-        flex-direction: column-reverse;
+        grid-template-columns: 1fr;
         justify-content: flex-start;
         height: max-content;
         .bottom-empty , .top-empty{
             border-top-width: 10rem;
             border-bottom-width: 10rem;
+        }
+        .girl2{
+            grid-row: 1;
         }
     }
 `
@@ -48,7 +51,7 @@ export const BottomField=()=>{
                 
             </div>
             <UserFromData/>
-            <Girl2 classname={'gril2'}/>
+            <Girl2 classname={'girl2'}/>
             <div className="bottom-empty">
                 
             </div>

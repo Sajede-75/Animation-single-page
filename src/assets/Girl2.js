@@ -4,7 +4,7 @@ import styled from "styled-components"
 const StyleGirl= styled.div`
     display: flex;
     position: relative;
-    width: calc(50% - 4.5rem);
+    width: calc(100% - 4.5rem);
     margin-right: 4.5rem;
     svg{
         width: 100%;

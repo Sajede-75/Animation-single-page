@@ -8,7 +8,7 @@ const Style = styled.div`
     flex-direction: column;
     align-items: flex-start;
     margin-left: 6rem;
-    width: calc(50% - 6rem);
+    width: calc(100% - 6rem);
     @keyframes textAnimation {
         100%{
             width: 0rem;

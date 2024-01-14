@@ -11,7 +11,7 @@ const StyleForm = styled.form`
     padding: 1rem;
     margin-left: 6rem;
     border-radius: 8px;
-    width: calc(40% - 2rem);
+    width: calc(100% - 8rem);
     .form-text{
         grid-column: span 2;
         display: flex;
@@ -55,13 +55,12 @@ const StyleSuccess= styled.div`
     -webkit-animation-fill-mode: backwards;
     animation-fill-mode: forwards;
 
-    
     @keyframes showup {
-    0% {opacity:0;}
-    20% {opacity:1;}
-    80% {opacity:1;}
-    100% {opacity:0;}
-}
+        0% {opacity:0;}
+        20% {opacity:1;}
+        80% {opacity:1;}
+        100% {opacity:0;}
+    }
 `
 
 const form = [

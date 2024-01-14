@@ -4,8 +4,8 @@ import RightFeildData from "./RightFieldData"
 
 const Style = styled.div`
     position: relative;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(2 , 50%);
     justify-content: space-between;
     align-items: flex-start;
     width: calc(100% - 20rem);
@@ -15,8 +15,11 @@ const Style = styled.div`
         padding: 0 1rem;
         margin-top: 0;
         width: calc(100% - 2rem);
-        flex-direction: column-reverse;
+        grid-template-columns: 1fr;
         justify-content: flex-start;
+        .girl{
+            grid-row: 1;
+        }
     }
 
 

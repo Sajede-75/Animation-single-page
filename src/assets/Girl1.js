@@ -4,7 +4,7 @@ const StyleGril = styled.div`
     display: flex;
     position: relative;
     justify-content: flex-start;
-    width: 45%;
+    width: 100%;
     svg{
         width: 100%;
         height: 100%;
@@ -179,8 +179,6 @@ const StyleGril = styled.div`
     @media screen and (max-width:850px){
         width: 100%;
         margin-top: 0;
-        max-height: 21rem;
-
     }
 `
 

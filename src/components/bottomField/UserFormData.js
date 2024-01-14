@@ -16,7 +16,7 @@ const StyleForm = styled.form`
         grid-column: span 2;
         display: flex;
         text-align: start;
-        font-size: var(--font-size-3);
+        margin: 0;
         font-weight: var(--font-weight-3);
     }
     .sendButton{
@@ -113,7 +113,7 @@ export const UserFromData=()=>{
     const userForm =()=>{
         return(
             <StyleForm onSubmit={postData} >
-                <div  className="form-text">Please fill out your information</div>
+                <h3  className="form-text">Please fill out your information</h3>
                 { 
                     form.map((value , index)=>{
                         return <TextInputWTitle key={index} keys={index}  error='' name={value.name} title={value.label} type={value.type} inputmode={value.mode} value={userdata[value.value]} onchange={inputchange} required={false}/>

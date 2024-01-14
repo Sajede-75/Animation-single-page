@@ -6,12 +6,11 @@ import styled from "styled-components";
 
 const Styles = styled.div`
   --trans-1: all 0.15s ease-in-out;
-  --fs-textfield: 16px;
-  --fs-small: 12px;
+  --fs-textfield: 12px;
+  --fs-small: 8px;
   --border-radius: 4px;
   --border-2: #E5E5E5;
   --border-3: #CBCBCB;
-
 
   width: 100%;
   display: flex;
@@ -60,7 +59,7 @@ const Styles = styled.div`
     z-index: 3;
     position: absolute;
     top: calc(var(--fs-textfield) * 0.5);
-    right: calc(var(--fs-textfield) * 1.2);
+    left: calc(var(--fs-textfield) * 1.2);
     transition: var(--trans-1);
     &.disabled {
       color: var(--color-3);
@@ -97,7 +96,7 @@ const Styles = styled.div`
   
     .label-textinput{
       top: calc(var(--fs-textfield) * 1.05);
-      right: calc(var(--fs-textfield) * 1.05);
+      left: calc(var(--fs-textfield) * 1.05);
     }
     .text-field:focus + .label-textinput {
       top: calc(var(--fs-textfield) * 0.3);

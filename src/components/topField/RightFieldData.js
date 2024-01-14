@@ -88,7 +88,7 @@ const Style = styled.div`
             inset: auto 0 0 auto;
         }
     }
-    .dataGrid{
+    .dataRow{
         position: relative;
         display: flex;
         flex-direction: row;
@@ -104,7 +104,7 @@ const Style = styled.div`
             justify-content: center;
             background: var(--bg-color-1);
             border-radius: var(--border-radius-1);
-            padding: 14px 40px 14px 20px;
+            padding: 7px 20px 7px 10px;
             max-width: calc(50% - 1rem);
             margin: 0.5rem ;
             margin-left: 0;
@@ -149,9 +149,13 @@ const Style = styled.div`
     @media screen and (max-width:850px){
         margin-left: 0;
         width: 100%;
-        .dataGrid .dataItem{
-            padding: 11.795px 33.701px 11.795px 16.85px;
-            max-width: calc(100% - 1rem);
+        .dataRow {
+            flex-direction: column;
+            width: 100%;
+            align-items: flex-start;
+            .dataItem{
+                max-width: calc(100% - 1rem );
+            }
         }
         .button{
             width: 100%
@@ -186,7 +190,7 @@ const RightFeildData=()=>{
             <h1 className="desc aniamationText">
                 Consequat Tristique.
             </h1>
-            <div className="dataGrid">
+            <div className="dataRow">
                 {datasFeild}
             </div>
             <button className='button'>Lorem Ipsum<Arrow classname="arrow"/></button>

@@ -47,6 +47,8 @@ const StyleSuccess= styled.h1`
     display: flex;
     text-align: center;
     position: relative;
+    text-align: center;
+    margin: auto;
     font-weight: var(--font-weight-1);
     color: var(--color-2);
     animation: showup 3s infinite linear;
@@ -123,7 +125,7 @@ export const UserFromData=()=>{
     const UserWelCome=()=>{
         return(
             <StyleSuccess>
-                Thank you. Your Data Saved &#58;&#41;
+                Thank you.<br/> Your Data Saved &#58;&#41;
             </StyleSuccess>
         )
     }

@@ -9,7 +9,7 @@ const Style = styled.div`
     justify-content: space-between;
     align-items: center;
     width: calc(100% - 20rem);
-    margin-top: 4.25rem;
+    margin-top: 3.2rem;
     padding: 0 10rem;
     @media screen and (max-width:850px){
         padding: 0 1rem;
@@ -17,7 +17,7 @@ const Style = styled.div`
         width: calc(100% - 2rem);
         grid-template-columns: 1fr;
         justify-content: flex-start;
-        .girl{
+        .girl1{
             grid-row: 1;
         }
     }
@@ -29,7 +29,7 @@ export const TopField=()=>{
     return(
         <Style>
             <RightFeildData/>
-            <Girl1 classname={'girl'}/>
+            <Girl1 classname={'girl1'}/>
         </Style>
     )
 

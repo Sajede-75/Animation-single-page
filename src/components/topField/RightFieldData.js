@@ -6,9 +6,11 @@ const Style = styled.div`
     position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: flex-start;
     margin-left: 6rem;
     width: calc(100% - 6rem);
+    height: 100%;
     @keyframes textAnimation {
         100%{
             width: 0rem;

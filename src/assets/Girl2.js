@@ -1,12 +1,13 @@
 import styled from "styled-components"
 
 
-const StyleGirl= styled.div`
+const StyleGirl2= styled.div`
     display: flex;
     position: relative;
+    margin: auto;
     width: calc(100% - 4.5rem);
     margin-right: 4.5rem;
-    svg{
+    .svg{
         width: 100%;
         height: 100%;
         position: relative;
@@ -14,10 +15,10 @@ const StyleGirl= styled.div`
     
     .rotate2{
         animation: rotate2 2s var(--liner) infinite ;
-        /* -webkit-animation: rotate2 2s var(--liner) infinite ; */
-        /* -moz-animation: rotate2 2s var(--liner) infinite ; */
-        /* -o-animation: rotate2 2s var(--liner) infinite ; */
-        /* -ms-transition: rotate2 2s var(--liner) infinite ; */
+        -webkit-animation: rotate2 2s var(--liner) infinite ;
+        -moz-animation: rotate2 2s var(--liner) infinite ;
+        -o-animation: rotate2 2s var(--liner) infinite ;
+        -ms-transition: rotate2 2s var(--liner) infinite ;
     }
     @keyframes rotate2 {
         0% { transform: rotate(0deg) }
@@ -47,10 +48,10 @@ const StyleGirl= styled.div`
 
     .rotate3{
         animation: rotate3 2s var(--liner) infinite ;
-        /* -webkit-animation:rotate3 2s var(--liner) infinite ; */
-        /* -moz-animation:rotate3 2s var(--liner) infinite ; */
-        /* -o-animation:rotate3 2s var(--liner) infinite ; */
-        /* -ms-transition:rotate3 2s var(--liner) infinite ; */
+        -webkit-animation:rotate3 2s var(--liner) infinite ;
+        -moz-animation:rotate3 2s var(--liner) infinite ;
+        -o-animation:rotate3 2s var(--liner) infinite ;
+        -ms-transition:rotate3 2s var(--liner) infinite ;
     }
     @keyframes rotate3 {
         0% { transform: translateY(0px) rotate(0deg) scale(1.05) }
@@ -80,10 +81,10 @@ const StyleGirl= styled.div`
 
     .rotate4{
         animation: rotate4 2s var(--liner) infinite ;
-        /* -webkit-animation:rotate4 2s var(--liner) infinite ; */
-        /* -moz-animation:rotate4 2s var(--liner) infinite ; */
-        /* -o-animation:rotate4 2s var(--liner) infinite ; */
-        /* -ms-transition:rotate4 2s var(--liner) infinite ; */
+        -webkit-animation:rotate4 2s var(--liner) infinite ;
+        -moz-animation:rotate4 2s var(--liner) infinite ;
+        -o-animation:rotate4 2s var(--liner) infinite ;
+        -ms-transition:rotate4 2s var(--liner) infinite ;
     }
     @keyframes rotate4 {
         0% { transform: rotate(20deg) }
@@ -113,10 +114,10 @@ const StyleGirl= styled.div`
 
     .scaleB{
         animation: scaleB 2s var(--liner) infinite ;
-        /* -webkit-animation: scaleB 2s var(--liner) infinite ; */
-        /* -moz-animation: scaleB 2s var(--liner) infinite ; */
-        /* -o-animation: scaleB 2s var(--liner) infinite ; */
-        /* -ms-transition: scaleB 2s var(--liner) infinite ; */
+        -webkit-animation: scaleB 2s var(--liner) infinite ;
+        -moz-animation: scaleB 2s var(--liner) infinite ;
+        -o-animation: scaleB 2s var(--liner) infinite ;
+        -ms-transition: scaleB 2s var(--liner) infinite ;
     }
     @keyframes scaleB {
         0% { transform:scale(1) }
@@ -146,10 +147,10 @@ const StyleGirl= styled.div`
 
     .moreWidth{
         animation: moreWidth 2s var(--liner) infinite ;
-        /* -webkit-animation: moreWidth 2s var(--liner) infinite ; */
-        /* -moz-animation: moreWidth 2s var(--liner) infinite ; */
-        /* -o-animation: moreWidth 2s var(--liner) infinite ; */
-        /* -ms-transition: moreWidth 2s var(--liner) infinite ;  */
+        -webkit-animation: moreWidth 2s var(--liner) infinite ;
+        -moz-animation: moreWidth 2s var(--liner) infinite ;
+        -o-animation: moreWidth 2s var(--liner) infinite ;
+        -ms-transition: moreWidth 2s var(--liner) infinite ; 
     }
     @keyframes moreWidth {
         0% { transform: scaleX(1.5)}
@@ -177,54 +178,73 @@ const StyleGirl= styled.div`
         100% { transform: scaleX(1.5)}
     }
 
-    .moreHeight{
-        animation: bounceH 2s var(--liner) infinite ;
-        /* -webkit-animation: bounceH 2s var(--liner) infinite ; */
-        /* -moz-animation: bounceH 2s var(--liner) infinite ; */
-        /* -o-animation: bounceH 2s var(--liner) infinite ; */
-        /* -ms-transition: bounceH 2s var(--liner) infinite ; */
+    .moreHeightHande{
+        animation: handUp 2s var(--liner) infinite ;
+        -webkit-animation: handUp 2s var(--liner) infinite ;
+        -moz-animation: handUp 2s var(--liner) infinite ;
+        -o-animation: handUp 2s var(--liner) infinite ;
+        -ms-transition: handUp 2s var(--liner) infinite ;
     }
-    @keyframes bounceH {
-        0% { transform: scaleY(1.2)  }
-        50% { transform: scaleY(1) }
-        100% { transform: scaleY(1.2) }
+    @keyframes handUp {
+        0% { transform: scaleY(1)  }
+        50% { transform: scaleY(1.2) }
+        100% { transform: scaleY(1) }
     }
-    @-webkit-keyframes bounceH {
-        0% { transform: scaleY(1.2)  }
-        50% { transform: scaleY(1) }
-        100% { transform: scaleY(1.2) }
+    @-webkit-keyframes handUp {
+        0% { transform: scaleY(1)  }
+        50% { transform: scaleY(1.2) }
+        100% { transform: scaleY(1) }
     }
-    @-ms-keyframes bounceH {
-        0% { transform: scaleY(1.2)  }
-        50% { transform: scaleY(1) }
-        100% { transform: scaleY(1.2) }
+    @-ms-keyframes handUp {
+        0% { transform: scaleY(1)  }
+        50% { transform: scaleY(1.2) }
+        100% { transform: scaleY(1) }
     }
-    @-o-keyframes bounceH {
-        0% { transform: scaleY(1.2)  }
-        50% { transform: scaleY(1) }
-        100% { transform: scaleY(1.2) }
+    @-o-keyframes handUp {
+        0% { transform: scaleY(1)  }
+        50% { transform: scaleY(1.2) }
+        100% { transform: scaleY(1) }
     }
-    @-moz-keyframes bounceH {
-        0% { transform: scaleY(1.2)  }
-        50% { transform: scaleY(1) }
-        100% { transform: scaleY(1.2) }
+    @-moz-keyframes handUp {
+        0% { transform: scaleY(1)  }
+        50% { transform: scaleY(1.2) }
+        100% { transform: scaleY(1) }
     }
 
     .scaleS{
         animation: scaleS 2s var(--liner) infinite ;
-        /* -webkit-animation: scaleS 2s var(--liner) infinite ; */
-        /* -moz-animation: scaleS 2s var(--liner) infinite ; */
-        /* -o-animation: scaleS 2s var(--liner) infinite ; */
-        /* -ms-transition: scaleS 2s var(--liner) infinite ; */
+        -webkit-animation: scaleS 2s var(--liner) infinite ;
+        -moz-animation: scaleS 2s var(--liner) infinite ;
+        -o-animation: scaleS 2s var(--liner) infinite ;
+        -ms-transition: scaleS 2s var(--liner) infinite ;
     }
     @keyframes scaleS {
         0% { transform:scale(1) }
         50% { transform:scale(0.8) }
         100% { transform:scale(1) }
     }
+    @-webkit-keyframes scaleS {
+        0% { transform:scale(1) }
+        50% { transform:scale(0.8) }
+        100% { transform:scale(1) }
+    }
+    @-moz-keyframes scaleS {
+        0% { transform:scale(1) }
+        50% { transform:scale(0.8) }
+        100% { transform:scale(1) }
+    }
+    @-o-keyframes scaleS {
+        0% { transform:scale(1) }
+        50% { transform:scale(0.8) }
+        100% { transform:scale(1) }
+    }
+    @-ms-keyframes scaleS {
+        0% { transform:scale(1) }
+        50% { transform:scale(0.8) }
+        100% { transform:scale(1) }
+    }
 
     @media screen and (max-width:850px){
-        max-height: 21rem;
         width: 100% ;
         margin-right: 0;
     }
@@ -235,8 +255,8 @@ const StyleGirl= styled.div`
 
 const Girl2=({classname})=>{
     return(
-        <StyleGirl className={classname}>
-            <svg width="714" height="715" viewBox="0 0 714 715" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <StyleGirl2 className={classname}>
+            <svg width="714" height="715" viewBox="0 0 714 715" fill="none" xmlns="http://www.w3.org/2000/svg" className="svg">
             <path className='animation rotate3' d="M483.314 95.9891L126.378 252.398C95.2262 266.05 90.5281 308.311 117.931 328.46L431.834 559.404C459.231 579.56 498.179 562.495 501.928 528.702L544.961 141.357C548.716 107.534 514.466 82.3374 483.314 95.9891Z" fill="#FFF1C9"/>
             <path d="M599.988 576.675H78.3186C77.9399 576.675 77.5767 576.525 77.3089 576.257C77.0411 575.989 76.8906 575.626 76.8906 575.247C76.8906 574.869 77.0411 574.505 77.3089 574.238C77.5767 573.97 77.9399 573.819 78.3186 573.819H599.988C600.367 573.819 600.73 573.97 600.998 574.238C601.266 574.505 601.416 574.869 601.416 575.247C601.416 575.626 601.266 575.989 600.998 576.257C600.73 576.525 600.367 576.675 599.988 576.675Z" fill="#262626"/>
             <g className="animation scaleB">
@@ -273,7 +293,7 @@ const Girl2=({classname})=>{
             <path d="M396.805 420.552C396.465 420.557 396.134 420.44 395.873 420.223C395.611 420.006 395.435 419.702 395.377 419.367C394.978 417.003 385.788 361.454 404.959 354.778C405.317 354.653 405.71 354.676 406.052 354.84C406.393 355.005 406.655 355.299 406.78 355.657C406.905 356.015 406.883 356.407 406.718 356.749C406.553 357.09 406.26 357.352 405.902 357.477C391.857 362.361 395.577 403.466 398.198 418.881C398.229 419.067 398.224 419.256 398.183 419.439C398.141 419.623 398.063 419.796 397.955 419.949C397.846 420.102 397.708 420.233 397.549 420.332C397.389 420.432 397.212 420.5 397.027 420.531C396.954 420.544 396.88 420.551 396.805 420.552Z" fill="#262626"/>
             <path d="M278.524 420.552C278.202 420.553 277.889 420.444 277.637 420.245C277.384 420.045 277.206 419.766 277.132 419.452C273.403 403.909 273.303 387.717 276.839 372.129C278.121 366.579 279.87 361.148 282.066 355.892C282.218 355.553 282.497 355.287 282.843 355.15C283.189 355.014 283.575 355.017 283.918 355.161C284.261 355.304 284.535 355.575 284.681 355.917C284.827 356.259 284.834 356.645 284.7 356.992C282.568 362.1 280.87 367.378 279.624 372.771C276.184 387.934 276.284 403.685 279.917 418.803C279.959 418.986 279.965 419.175 279.934 419.36C279.903 419.545 279.836 419.722 279.736 419.882C279.637 420.041 279.507 420.179 279.354 420.288C279.201 420.397 279.028 420.474 278.846 420.516C278.74 420.542 278.632 420.554 278.524 420.552Z" fill="#262626"/>
             <g className="animation moveup">
-                <path className="animation moreHeight" d="M258.111 331.259C256.626 329.34 254.923 327.6 253.034 326.076L252.956 326.004C249.425 322.87 246.357 319.249 243.845 315.251C241.618 311.681 240.275 308.026 238.09 302.399C236.998 299.6 236.227 297.401 235.798 296.173C230.708 281.551 227.366 268.442 222.197 266.557C221.418 266.292 220.61 266.127 219.791 266.064C218.7 265.962 217.599 266.079 216.555 266.409C215.51 266.739 214.542 267.274 213.707 267.985C213.154 268.457 212.673 269.008 212.279 269.62C210.28 272.797 211.273 277.402 213.322 286.477C213.65 287.905 213.943 289.083 214.136 289.869L218.284 308.89C218.284 308.89 208.088 311.196 208.659 319.278C208.659 319.278 199.235 313.695 195.579 324.662C195.579 324.662 183.655 325.626 187.118 338.706C187.118 338.706 191.923 356.214 199.042 356.792C199.042 356.792 197.699 384.11 220.398 396.062L257.526 391.392L259.967 380.811C266.393 352.965 263.495 343.933 262.416 340.591C261.374 337.314 259.928 334.179 258.111 331.259Z" fill="white"/>
+                <path className="animation moreHeightHande" d="M258.111 331.259C256.626 329.34 254.923 327.6 253.034 326.076L252.956 326.004C249.425 322.87 246.357 319.249 243.845 315.251C241.618 311.681 240.275 308.026 238.09 302.399C236.998 299.6 236.227 297.401 235.798 296.173C230.708 281.551 227.366 268.442 222.197 266.557C221.418 266.292 220.61 266.127 219.791 266.064C218.7 265.962 217.599 266.079 216.555 266.409C215.51 266.739 214.542 267.274 213.707 267.985C213.154 268.457 212.673 269.008 212.279 269.62C210.28 272.797 211.273 277.402 213.322 286.477C213.65 287.905 213.943 289.083 214.136 289.869L218.284 308.89C218.284 308.89 208.088 311.196 208.659 319.278C208.659 319.278 199.235 313.695 195.579 324.662C195.579 324.662 183.655 325.626 187.118 338.706C187.118 338.706 191.923 356.214 199.042 356.792C199.042 356.792 197.699 384.11 220.398 396.062L257.526 391.392L259.967 380.811C266.393 352.965 263.495 343.933 262.416 340.591C261.374 337.314 259.928 334.179 258.111 331.259Z" fill="white"/>
                 <path d="M225.21 380.575C224.985 380.576 224.762 380.523 224.561 380.421C224.36 380.32 224.186 380.172 224.053 379.99C219.767 374.17 217.105 367.314 216.342 360.126C214.721 343.704 224.103 331.566 227.945 327.389L224.967 319.707C224.674 318.928 224.296 317.936 223.875 316.951C221.511 311.46 220.448 306.848 220.719 303.235C220.796 302.144 221.093 301.079 221.592 300.106C222.092 299.133 222.783 298.271 223.625 297.573C224.449 296.885 225.405 296.372 226.433 296.066C227.462 295.759 228.542 295.664 229.608 295.788C236.077 296.502 239.947 303.899 240.111 304.206C240.197 304.373 240.25 304.555 240.266 304.742C240.282 304.929 240.26 305.118 240.203 305.297C240.146 305.476 240.055 305.642 239.933 305.785C239.812 305.929 239.664 306.047 239.497 306.134C239.33 306.22 239.148 306.272 238.961 306.288C238.774 306.304 238.585 306.283 238.406 306.226C238.227 306.169 238.061 306.077 237.917 305.956C237.774 305.835 237.656 305.686 237.569 305.52C237.569 305.455 234.235 299.172 229.294 298.629C228.609 298.549 227.914 298.609 227.252 298.805C226.591 299.002 225.976 299.331 225.446 299.772C224.9 300.226 224.452 300.786 224.129 301.418C223.806 302.05 223.615 302.741 223.568 303.449C223.332 306.598 224.317 310.76 226.495 315.823C226.945 316.858 227.338 317.9 227.638 318.679L231.265 328.032L230.629 328.689C227.538 331.895 217.584 343.611 219.205 359.834C219.909 366.51 222.373 372.879 226.345 378.29C226.568 378.596 226.661 378.976 226.603 379.35C226.546 379.723 226.342 380.059 226.038 380.282C225.8 380.465 225.51 380.567 225.21 380.575Z" fill="#262626"/>
                 <path d="M231.772 284.007C230.344 280.108 228.28 275.103 225.381 270.919C222.925 267.349 220.119 265.85 217.035 266.385C216.143 266.492 215.285 266.794 214.524 267.27C213.762 267.747 213.115 268.386 212.629 269.141C210.195 273.047 211.815 279.937 212.629 282.707L212.736 283.064L210.016 283.928L209.887 283.507C208.752 279.594 207.274 272.333 210.209 267.628C210.904 266.528 211.832 265.594 212.928 264.892C214.023 264.19 215.26 263.737 216.549 263.565C220.769 262.851 224.639 264.807 227.737 269.277C230.836 273.747 232.943 278.944 234.456 282.993L231.772 284.007Z" fill="#262626"/>
                 <path d="M212.436 360.733C211.042 360.747 209.663 360.444 208.402 359.848C206.833 359.079 205.502 357.896 204.554 356.428C204.064 357.025 203.454 357.512 202.762 357.856C201.449 358.478 199.947 358.567 198.571 358.106C198.394 358.041 198.232 357.943 198.094 357.816C197.956 357.69 197.844 357.537 197.765 357.367C197.685 357.197 197.64 357.013 197.632 356.825C197.624 356.638 197.653 356.451 197.717 356.274C197.782 356.098 197.88 355.936 198.007 355.798C198.133 355.66 198.286 355.548 198.456 355.468C198.626 355.389 198.81 355.344 198.998 355.336C199.185 355.328 199.372 355.357 199.549 355.421C200.2 355.617 200.901 355.569 201.519 355.285C201.951 355.008 202.323 354.647 202.613 354.224C202.904 353.801 203.107 353.325 203.212 352.822L204.64 348.174L205.975 352.844C205.975 352.844 206.924 355.964 209.68 357.263C211.637 358.191 214.121 358.027 217.063 356.785C217.237 356.703 217.426 356.657 217.618 356.65C217.81 356.643 218.001 356.674 218.181 356.743C218.36 356.812 218.524 356.916 218.662 357.049C218.801 357.183 218.911 357.343 218.986 357.52C219.061 357.697 219.099 357.887 219.099 358.079C219.099 358.271 219.06 358.461 218.984 358.638C218.909 358.815 218.798 358.974 218.66 359.107C218.521 359.241 218.357 359.344 218.177 359.412C216.371 360.232 214.419 360.681 212.436 360.733Z" fill="#262626"/>
@@ -322,7 +342,7 @@ const Girl2=({classname})=>{
             <path className='animation scaleS' d="M119.338 492.652C125.785 492.652 131.012 487.425 131.012 480.978C131.012 474.531 125.785 469.304 119.338 469.304C112.891 469.304 107.664 474.531 107.664 480.978C107.664 487.425 112.891 492.652 119.338 492.652Z" fill="#FFBB45"/>
             <path className='animation scaleS' d="M81.1747 476.016C88.0834 476.016 93.684 470.415 93.684 463.506C93.684 456.598 88.0834 450.997 81.1747 450.997C74.266 450.997 68.6654 456.598 68.6654 463.506C68.6654 470.415 74.266 476.016 81.1747 476.016Z" fill="#FFBB45"/>
             </svg>
-        </StyleGirl>
+        </StyleGirl2>
     )
 }
 

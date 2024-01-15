@@ -1,8 +1,5 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-// import ErrorIcon from '@mui/icons-material/Error';
-
-
 
 const Styles = styled.div`
   --trans-1: all 0.15s ease-in-out;
@@ -147,7 +144,6 @@ export const TextInputWTitle = ({
     classes = "text-field error-text";
     errorComp = (
       <React.Fragment>
-        {/* <ErrorRounded style={{fontSize: "20px"}}/> */}
         <div className="text">{error}</div>
       </React.Fragment>
     );
